@@ -1,6 +1,6 @@
 # react-native-autogrow-textinput-ts
 
-* Note: This is the fork of `eact-native-autogrow-textinput` by wix. I added typings and some critical fix to the component.
+* Note: This is the fork of `eact-native-autogrow-textinput` by wix. I added typings and some critical fixes to the component.
 
 
 A helper component meant to be used as a drop-in replacement for RN TextInput to allow automatic expanding of a multi-line text input according to the number of lines.
