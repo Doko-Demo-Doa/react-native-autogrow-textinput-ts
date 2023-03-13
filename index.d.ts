@@ -7,6 +7,6 @@ export interface AutoGrowTextInputProps extends TextInputProps {
   maxHeight?: number
 }
 
-declare const AutoGrowTextInput: React.SFC<AutoGrowTextInputProps>
+declare const AutoGrowTextInput: React.FC<AutoGrowTextInputProps>
 
 export default AutoGrowTextInput
