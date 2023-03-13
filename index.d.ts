@@ -1,9 +1,12 @@
+import React from "react";
 import { TextInputProps } from "react-native";
 
-interface Props extends TextInputProps {
+export interface AutoGrowTextInputProps extends TextInputProps {
   enableScrollToCaret?: boolean
   minHeight?: number
   maxHeight?: number
 }
 
-export default Props;
+declare const AutoGrowTextInput: React.SFC<AutoGrowTextInputProps>
+
+export default AutoGrowTextInput
