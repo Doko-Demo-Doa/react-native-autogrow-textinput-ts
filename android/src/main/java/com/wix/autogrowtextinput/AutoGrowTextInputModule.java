@@ -121,6 +121,9 @@ public class AutoGrowTextInputModule extends ReactContextBaseJavaModule {
         return editText;
     }
     private int getCaretY() {
+        if (editText == null) {
+            return 0;
+        }
         int pos = editText.getSelectionStart();
         Layout layout = editText.getLayout();
         int line = layout.getLineForOffset(pos);
