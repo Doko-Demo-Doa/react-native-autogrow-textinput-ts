@@ -1,12 +1,12 @@
-import React from "react";
-import { TextInputProps } from "react-native";
+import React from 'react';
+import {TextInputProps} from 'react-native';
 
-export interface AutoGrowTextInputProps extends TextInputProps {
-  enableScrollToCaret?: boolean
-  minHeight?: number
-  maxHeight?: number
+declare module 'react-native-autogrow-textinput-ts' {
+  export interface AutoGrowTextInputProps extends TextInputProps {
+    enableScrollToCaret?: boolean;
+    minHeight?: number;
+    maxHeight?: number;
+  }
+
+  export default class AutoGrowingTextInput extends React.Component<AutoGrowTextInputProps> {}
 }
-
-declare const AutoGrowTextInput: React.FC<AutoGrowTextInputProps>
-
-export default AutoGrowTextInput
